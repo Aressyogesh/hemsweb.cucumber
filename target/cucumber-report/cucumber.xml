@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="102.507">
+    <testcase classname="To validate Create Work Order functionality" name="Add Work Order" time="101.786">
+        <failure message="Unable to find element with locator By.cssSelector: body .ui-front:nth-child(25)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.1.1', revision: 'e8fcc2cecf'&#10;System info: host: 'DESKTOP-PU9SV1T', ip: '192.168.9.239', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchElementException"><![CDATA[When User enters Username admin.............................................passed
+And User enters Password super..............................................passed
+And Click on Login..........................................................passed
+Then Page title should be "Dashboard".......................................passed
+And Click WO link...........................................................passed
+Then Page title should be "Work Order"......................................passed
+And Click Add Work Order link...............................................passed
+And Select Department.......................................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to find element with locator By.cssSelector: body .ui-front:nth-child(25)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-PU9SV1T', ip: '192.168.9.239', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at Core.commonFunctions.selectListValue(commonFunctions.java:56)
+	at pageObjects.workOrderPage.selectDepartment(workOrderPage.java:37)
+	at stepDefinitions.addWOSteps.select_department(addWOSteps.java:25)
+	at ✽.Select Department(file:///D:/Yogesh/Automation-Projects/hemsweb_cucumber/./Features/CreateWorkOrder.feature:11)
+]]></failure>
+    </testcase>
+</testsuite>
